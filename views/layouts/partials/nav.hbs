@@ -1,0 +1,21 @@
+<header>
+    <nav> <label class="Nav_Bar">Johnson's CSC 317 Website</label></nav>
+    <ul class="Nav_Links">
+        <li><a id="Register" href="/registration">Register</a></li>
+        <li><a id="Nav_Upload" href="/postimage">Upload</a></li>
+        <li><a id="Nav_Post" href="/index">Posts</a></li>
+
+
+        {{#if search}}
+        <form class="searchBar" action="/search" method="post">
+            <input type="text" name="search" />
+            <button class="searchSubmit" type="submit" name="submit">Go</button>
+
+        </form>
+        {{/if}} {{#if logged}} <li><a id="Nav_LoginButton" href="/">Logout</a></li>
+        {{else}}
+        <li><a href="/login" id="Nav_LoginButton">Login</a></li>
+        {{/if}}
+
+    </ul>
+</header>

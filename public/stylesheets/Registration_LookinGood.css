@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap);
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'open Sans', sans-serif;
+}
+
+body{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 100vh;
+    background-image:
+    url("wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.2s ease;
+   
+}
+
+.Nav_Bar{
+    width: 20px;
+    border-radius: 16px;
+}
+header:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.7), 
+    0 10px 10px rgba(0,0,0,0.32);
+}
+
+.Nav_Links li,a{
+    display: inline-block;
+    padding: 0px 10px;
+    background-color: transparent;
+    border-radius: 16px;
+    color: white;
+}
+
+#Home:hover{
+    background-color: teal;
+    transition: all 0.2s ease;
+
+}
+
+#Nav_Reg:hover{
+    background-color: teal;
+    transition: all 0.2s ease;
+}
+
+#Nav_Login:hover{
+    background-color: teal;
+    transition: all 0.2s ease;
+}
+
+
+.Registration {
+    width: 285px;
+    height: 390px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #34495e;
+    transition: all 0.2s ease;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.4), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+h1{
+    color: white;
+}
+
+.Registration:hover{
+    box-shadow: 0px 12px 20px rgba(0,0,0,0.7), 
+    0px 10px 15px rgba(0,0,0,0.32);
+
+}
+
+#Username,#Reg_Email,#Confirm_PW{
+    border-radius: 10px;
+}
+
+.Age_Checkbox {
+    color: white;
+    font-size: 10px;
+
+}
+
+.Terms_Check{
+    color: white;
+    font-size: 10px;
+}
+
+#submit {
+    margin-top: 10px;
+    width: 220px;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    background: teal;
+    border-radius: 10px;
+}

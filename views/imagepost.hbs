@@ -1,0 +1,45 @@
+<body>
+
+    <section class="card">
+
+        <div id="info">
+            <img id="image" src="{{data.thumbnail}}">
+            <div id="info-message-grid">
+                <div id="info">
+
+                    <div id="image-post-title">
+                        <h2 id="image-post-title-text">{{data.title}}</h2>
+                    </div>
+                    <div class="cardInfo">
+                        <div id="image-post-author">{{data.username}}</div>
+                        <div id="image-post-date">{{data.created}}</div>
+                        <div id="image-post-descrption">{{data.description}}</div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="messages">
+
+                <div id="comment-title">
+                    <h2>Comments</h2>
+                </div>
+                <div id="message-list">
+                    {{#each currentPost.comment}}
+                    <p>Comment: {{> data.comment}}</p>
+                    <p>{{data.created}}</p>
+                    {{/each}}
+                </div>
+
+                <form action="/comment" method="POST" enctype="application/x-www-form-urlencoded">
+                    <div id="comment-box">
+                        <textarea type="text" name="comment" id="comment-box-text"></textarea>
+                        <i id="comment-box-button" class="fa fa-comment" aria-hidden="true"></i>
+
+                        <button class="commentButton" type="submit"> Submit </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+</body>

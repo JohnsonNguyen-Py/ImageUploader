@@ -1,0 +1,38 @@
+<div class="Reg_Logo">
+
+</div>
+
+<form class="form-grid-reg" method="POST" action="/users/register" enctype="application/x-www-form-urlencoded">
+    <fieldset class="Registration">
+
+        <h1>Sign Up now!</h1>
+        <br>
+
+        <input type="text" required name="Username" id="Username" placeholder="Username">
+        <br><br>
+
+        <input type="text" required name="Email" id="Reg_Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+            placeholder="email@example.com" required />
+        <br><br>
+
+        <input type="text" required name="Password" id="Password" placeholder="Password">
+        <br><br>
+
+        <input type="text" required name="con_Pw" id="Confirm_PW" placeholder="Confirm Password">
+        <br><br>
+
+        <input type="checkbox" id="Agree_Age" name="Agree_Age" required />
+        <label class="Age_Checkbox" for="Agree_Age">Over 13 years of age</label>
+        <br>
+
+        <input type="checkbox" id="Agree_Terms" name="Agree_Terms" required />
+        <label class="Terms_Check" for="Agree_Terms">Accept Terms and Conditions</label>
+        <br><br>
+
+
+        <input id="submit" type="submit" value="Create My Account" />
+    </fieldset>
+</form>
+
+
+</form>

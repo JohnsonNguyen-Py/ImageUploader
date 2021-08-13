@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/Login_LookingGood.css">
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/PostImage_LookingGood.css">
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/ImagePost_LookingGood.css">
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/Registration_LookinGood.css">
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/index.css">
+    <script defer type="text/javascript" src="/javascripts/registration.js"></script>
+    {{!
+    <link rel="stylesheet" type="text/css" href="stylesheets\home.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="javascripts\home.js"></script>}}
+
+</head>
+
+<body>
+    <div id="container">
+        {{> nav}}
+        {{{body}}}
+    </div>
+
+    {{#if logged}}
+    <script>
+        console.log("logout testing"); //ignore testing
+        let ele = document.getElementById('Nav_LoginButton');
+        if (ele) {
+            ele.onclick = (even) => {
+                fetch('/users/logout', {
+                    method: 'POST'
+                })
+                    .then((data) => {
+                        location.replace('/login');
+                    })
+            }
+        }
+    </script>
+    {{/if}}
+</body>
+
+</html>

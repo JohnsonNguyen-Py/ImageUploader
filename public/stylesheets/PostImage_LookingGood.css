@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 100vh;
+    background-color: #061234;
+    background-image:
+    url("wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    border-radius: 2px;
+    height: 5px;
+    color: white;
+    transition: all 0.2s ease;
+   
+}
+
+.Nav_Bar{
+    width: 20px;
+    border-radius: 16px;
+}
+header:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.7), 
+    0 10px 10px rgba(0,0,0,0.32);
+}
+
+.Nav_Links li,a{
+    display: inline-block;
+    padding: 0px 10px;
+    background-color: transparent;
+    border-radius: 16px;
+    color: white;
+}
+
+#Home:hover{
+    background-color: teal;
+    transition: all 0.2s ease;
+
+}
+
+#Nav_Upload:hover{
+    background-color: teal;
+    transition: all 0.2s ease;
+}
+
+#Nav_Post:hover{
+    background-color: teal;
+    transition: all 0.2s ease;
+}
+
+#Nav_Logout:Hover{
+    background-color: teal;
+    transition: all 0.2s ease;
+}
+
+.Post_Req{
+    width: 285px;
+    height: 320px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #34495e;
+    transition: all 0.2s ease;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.4), 0 10px 10px rgba(0,0,0,0.22);
+    color: white;
+}
+
+.Get_File{
+    margin-left: 20px;
+}
+

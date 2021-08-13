@@ -1,0 +1,68 @@
+
+.grid-container{
+display: grid;
+grid-template-columns: 300px;
+grid-auto-rows: minmax(150px,auto);
+grid-row-gap: .2rem .2rem;
+grid-column-gap:1em ;
+padding-top: 1em;
+padding-bottom: .35em;
+
+border-radius: 18px;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.9); 
+float: left;
+
+
+}
+
+.grid-item-card{ 
+    display: grid;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    gap: .2rem .2rem;
+    justify-items: center;
+    grid-auto-rows: 1fr;
+    
+  
+   
+}
+
+.cardBody{
+color:lightgray;
+
+}
+
+.anchorButton{
+display: block;
+color:lightgray;
+text-align: left;
+
+}
+
+#info-message-grid, #messages{
+    color:lightgrey;
+}
+
+.searchBar{
+border-radius: 5px;
+float:left;
+}
+
+.searchSubmit{
+    width:30px;
+    height: 28px;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    background: teal;
+}
+
+.commentButton{
+    margin-top: 0px;
+    width: 105px;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    background: teal;
+    border-radius: 10px;
+}

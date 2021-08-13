@@ -1,0 +1,22 @@
+<div class="Post_Req">
+
+    <form method="POST" action="/posts/createPost" enctype="multipart/form-data">
+
+        <label class="Get_Title">Enter the Title</label>
+        <br>
+        <input type="text" id="Get_Title" name="title" required>
+        <br><br>
+
+        <label class="Photo_Des">Enter the Discription</label><br>
+        <input type="text" id="Photo_Des" name="description" required><br><br>
+
+        <label class="Get_File" for=file></label>
+        <input type="file" name="uploadImage" required><br><br>
+
+        <input type="checkbox" id="Agree_Terms" name="Agree_Terms" required />
+        <label for="Agree_Terms"> Terms and Conidtion for uploading images</label>
+        <br><br>
+
+        <input type="submit" id="submit" />
+    </form>
+</div>

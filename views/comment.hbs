@@ -1,0 +1,17 @@
+<div class="message-each" id="message--{{id}}">
+    <class="author-text">@{{username}}</class>
+    <span class="date-posted">{{created}}</span>
+    <div class="comment-text">{{comment}}</div>
+</div>
+
+
+<div id="messages">
+    <div id="comment-title">
+        <h2>Comments</h2>
+    </div>
+    <div id="message-list">
+        {{#each comment}}
+        <p>Comment: {{data.comment}}</p>
+        <p>{{data.created}}</p>
+        {{/each}}
+    </div>
