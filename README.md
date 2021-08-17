@@ -25,4 +25,3 @@ Please follow the instructions below and fill in the information requested when 
 ## Run Instructions
 1. nodemon
 2. localhost:3000 
-3. To use database run query in config/database 
